@@ -4,16 +4,79 @@
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
 
-$gutter-size: 2rem;
-$input-minimum-width: 10rem;
-$background-haze: rgba(0, 0, 0, 0.8);
-$button-background-brand-primary: #fff;
-$card-background: #0040ff;
-$card-text-color: #f00;
-$label-color: #0f0;
-$brand-border: 0.2rem solid #dcd;
-$brand-shadow: 0.2rem 0.2rem #ff0;
-
 @import 'box-sizing';
 @import 'base';
 @import 'variables';
+
+.modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: $gutter;
+  background-color: $background-haze;
+}
+
+.card {
+  width: 100%;
+  max-width: 50rem;
+
+  background: $card-background;
+  color: $card-text-color;
+  box-shadow: $brand-shadow;
+
+}
+
+.card-title {
+  flex-flow: column;
+  margin: 3rem;
+}
+
+.card-fields {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 50rem;
+  margin-bottom: 3rem;
+}
+
+.card-field-boxes {
+  flex-grow: 0;
+}
+
+.form-field-label {
+  color: $label-color;
+}
+
+.form-field-input {
+  width: 100%;
+  min-width: $input-minimum-width;
+  border: 0;
+  border-bottom: $brand-border;
+  outline: none;
+  background: $card-background;
+
+  color: $card-text-color;
+  font-size: 1.2rem;
+
+}
+
+::-webkit-input-placeholder {
+  color:$card-text-color;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 50rem;
+
+  border-top: $brand-border;
+}
+
+.form-button {
+  margin: 3rem;
+
+  border-radius: 0.2rem;
+  font-size: 2rem;
+}
