@@ -62,8 +62,9 @@
 }
 
 ::-webkit-input-placeholder {
-  color:$card-text-color;
+  color: $card-text-color;
 }
+
 
 .card-actions {
   display: flex;
@@ -78,5 +79,8 @@
   margin: 3rem;
 
   border-radius: 0.2rem;
+
+  background: $button-background-brand-primary;
+  color: $brand-white;
   font-size: 2rem;
 }
